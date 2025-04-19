@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <body>
         <header>
@@ -9,13 +10,14 @@
                     <li><a href="#Namaku">Namaku</a></li>
                     <li><a href="#TentangSaya">Tentang Saya</a></li>
                     <li><a href="#Organisasi">Organisasi</a></li>
+                    <li><a href="#Proyek">Proyek</a></li>
                     <li><a href="#Hobykuu">Hoby kuu</a></li>
                 </section>
             </nav>
 
             <div>
                 <h2 id="Portofolio">Portofolio</h2>
-                <img src="gambar1.png" class="cover-image">
+                <img src="gambar/gambar1.png" class="cover-image">
             </div>
         </header>
 
@@ -23,29 +25,47 @@
             <div id="content">
                 <article id="Namaku" class="card">
                     <h2>Namaku</h2>
-                    <img src="gambar2.png" class="featured-image" alt="Namaku">
+                    <img src="gambar/gambar2.png" class="featured-image" alt="Namaku">
                     <figcaption>Saya Adinda Vany Astari, mahasiswi Program Studi Sistem Informasi di Universitas Internasional Semen Indonesia (UISI). Saat ini saya sedang menempuh pendidikan dengan harapan dapat terus belajar dan berkembang, khususnya dalam bidang teknologi informasi yang semakin berkembang pesat. Saya memiliki ketertarikan pada dunia sistem informasi karena menurut saya, teknologi dapat memberikan banyak solusi dan kemudahan dalam kehidupan sehari-hari.</figcaption>
                 </article>
 
                 <article id="TentangSaya" class="card">
                     <h2>Tentang Saya</h2>
-                    <img src="gambar3.png" class="featured-image" alt="Tentang Saya">
+                    <img src="gambar/gambar3.png" class="featured-image" alt="Tentang Saya">
                     <p> </p>
                 </article>
 
                 <article id="Organisasi" class="card">
                     <h2>Organisasi</h2>
-                    <img src="gambar5.png" class="featured-image" alt="Organisasi">
-                    <p> </p>
+                    <img src="gambar/gambar5.png" class="featured-image" alt="Organisasi">
+                    <figcaption>Gambar berisi Organisasi penulis.</figcaption>
                 </article>
 
-                <aside>
-                    <p>Gambar berisi Organisasi penulis.</p>
-                </aside>
+                <article id="Proyek" class="card">
+                    <h2>Proyek</h2>
+                    <div class="project-grid">
+                        <div class="orange">
+                            <img src="gambar/gambar6.png" class="featured-image" alt="Proyek">
+                            <p class="orange">Edukasi Memasak: Membagikan tips dan resep memasak sehat dan praktis untuk semua kalangan.</p>
+                        </div>
+                        <div class="brown">
+                            <img src="gambar/gambar7.png" class="featured-image" alt="Proyek">
+                            <p class="brown">Edukasi Kecantikan: Memberikan informasi seputar perawatan diri, skincare, dan makeup yang aman.</p>
+                        </div>
+                        <div class="light-blue">
+                            <img src="gambar/gambar8.png" class="featured-image" alt="Proyek">
+                            <p class="light-blue">Toko Retail Frozen Food: Menyediakan makanan beku berkualitas dan praktis dengan harga terjangkau.</p>
+                        </div>
+                        <div class="dark-blue">
+                            <img src="gambar/gambar9.png" class="featured-image" alt="Proyek">
+                            <p class="dark-blue">Edukasi Sampah: Mengajak masyarakat untuk peduli lingkungan melalui pengelolaan sampah yang baik dan benar.</p>
+                        </div>
+                    </div>
+                </article>
 
                 <article id="Hobykuu" class="card">
                     <h2>Hoby kuu</h2>
-                    <img src="gambar4.png" class="featured-image" alt="Hoby kuu">
+                    <img src="gambar/gambar4.png" class="featured-image" alt="Hoby kuu">
                     <p>Bagi saya, jalan-jalan di alam adalah momen terbaik untuk bersyukur. Saat kaki melangkah di jalan setapak yang dikelilingi pepohonan rindang, saya merasakan udara segar yang memenuhi paru-paru, begitu banyak nikmat yang sering tak disadari. Suara gemericik air sungai, kicauan burung, dan semilir angin yang menyapu wajah membuat saya sadar bahwa Tuhan telah menciptakan dunia ini dengan begitu indah. Setiap daun yang berguguran, awan yang bergerak pelan di langit, hingga aroma tanah setelah hujan, semuanya terasa begitu bermakna. Di tengah hiruk-pikuk kehidupan, hobi ini mengajarkan saya untuk melambat sejenak, melihat sekitar, dan mensyukuri setiap detik yang diberikan Tuhan.</p>
                 </article>
 
@@ -54,7 +74,7 @@
                     <video width="1300" height="480" controls>
                         <source src="video.mp4" type="video/mp4">
                     </video> 
-                    <p>Video kenangan saya waktu jalan-jalan dan berkemah di Trawas dengan view gunung yang sangat indah</p>
+                    <p>Di tengah udara sejuk dan pemandangan gunung yang memanjakan mata, saya menikmati waktu dengan cara yang sederhana. Duduk bersama, berbagi cerita ringan, sambil mencicipi jajanan favorit yang kami bawa dari rumah. Tidak ada hal yang mewah, hanya obrolan hangat, tawa kecil, dan suasana yang membuat hati terasa lebih dekat dengan alam dan satu sama lain. Momen seperti ini membuat saya sadar bahwa kebahagiaan seringkali hadir dalam kesederhanaan yang tulus.</p>
                 </article>
 
                 <article id="MySong" class="card">
@@ -82,6 +102,7 @@
             Gambar ini Memiliki Hak Cipta
         </footer>
 
+        <!-- CSS -->
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -128,21 +149,6 @@
                 padding: 20px;
             }
 
-            .card {
-                background-color: white;
-                padding: 20px;
-                margin-bottom: 20px;
-                border-radius: 10px;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            }
-
-            .featured-image {
-                width: 100%;
-                height: auto;
-                border-radius: 8px;
-                margin-bottom: 10px;
-            }
-
             footer {
                 text-align: center;
                 padding: 15px;
@@ -178,6 +184,70 @@
 
             html {
                 scroll-behavior: smooth;
+            }
+
+            .featured-image {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                margin-bottom: 10px;
+            }
+
+            /* FLEXBOX */
+            #content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 20px;
+            }
+
+            .card {
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                flex: 1 1 calc(50% - 20px); /* 2 kolom */
+                box-sizing: border-box;
+            }
+
+            /* GRID untuk proyek */
+            .project-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+            }
+
+            .project-grid img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+
+            /* Warna teks untuk proyek */
+            .orange p {
+                color: rgb(238, 169, 41);
+            }
+
+            .brown p {
+                color: brown;
+            }
+
+            .light-blue p {
+                color: #00bfff;
+            }
+
+            .dark-blue p {
+                color: #00008b;
+            }
+
+            @media (max-width: 768px) {
+                .card {
+                    flex: 1 1 100%;
+                }
+
+                .project-grid {
+                    grid-template-columns: 1fr;
+                }
             }
         </style>
     </body>
