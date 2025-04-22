@@ -73,7 +73,7 @@
 
                 <article id="MyMovie" class="card">
                     <h2>My Movie</h2>
-                    <video width="1240" height="360" controls>
+                    <video controls>
                         <source src="video.mp4" type="video/mp4">
                     </video> 
                     <p>Di tengah udara sejuk dan pemandangan gunung yang memanjakan mata, saya menikmati waktu dengan cara yang sederhana. Duduk bersama, berbagi cerita ringan, sambil mencicipi jajanan favorit yang kami bawa dari rumah. Tidak ada hal yang mewah, hanya obrolan hangat, tawa kecil, dan suasana yang membuat hati terasa lebih dekat dengan alam dan satu sama lain. Momen seperti ini membuat saya sadar bahwa kebahagiaan seringkali hadir dalam kesederhanaan yang tulus.</p>
@@ -106,51 +106,54 @@
         </footer>
 
         <style>
-            body {
-                font-family: Arial, sans-serif;
+            html, body {
+                scroll-behavior: smooth;
+                overflow-x: hidden;
                 margin: 0;
                 padding: 0;
+                font-family: Arial, sans-serif;
                 background-color: #f9f9f9;
             }
-
+        
             header {
                 background-color: #8e989b;
                 color: white;
                 padding: 20px 0;
                 text-align: center;
             }
-
+        
             nav section {
                 display: flex;
                 justify-content: center;
                 list-style-type: none;
                 padding: 0;
                 margin: 0;
+                flex-wrap: wrap;
             }
-
+        
             nav section li {
                 margin: 0 15px;
             }
-
+        
             nav section li a {
                 color: white;
                 text-decoration: none;
                 font-weight: bold;
             }
-
+        
             nav section li a:hover {
                 text-decoration: underline;
             }
-
+        
             .cover-image {
                 width: 100%;
                 height: auto;
             }
-
+        
             main {
                 padding: 20px;
             }
-
+        
             footer {
                 text-align: center;
                 padding: 15px;
@@ -161,7 +164,7 @@
                 width: 100%;
                 margin-top: 40px;
             }
-
+        
             input[type="text"], input[type="email"] {
                 width: 100%;
                 padding: 10px;
@@ -170,7 +173,7 @@
                 border: 1px solid #ccc;
                 border-radius: 4px;
             }
-
+        
             button[type="submit"] {
                 background-color: #4CAF50;
                 color: white;
@@ -179,22 +182,18 @@
                 border-radius: 5px;
                 cursor: pointer;
             }
-
+        
             button[type="submit"]:hover {
                 background-color: #4574a0;
             }
-
-            html {
-                scroll-behavior: smooth;
-            }
-
+        
             .featured-image {
                 width: 100%;
                 height: auto;
                 border-radius: 8px;
                 margin-bottom: 10px;
             }
-
+        
             /* FLEXBOX */
             #content {
                 display: flex;
@@ -202,7 +201,7 @@
                 justify-content: space-between;
                 gap: 20px;
             }
-
+        
             .card {
                 background-color: white;
                 padding: 20px;
@@ -210,48 +209,69 @@
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
                 flex: 1 1 calc(50% - 20px);
                 box-sizing: border-box;
+                max-width: 100%;
             }
-
+        
+            video {
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+                border-radius: 10px;
+            }
+        
+            #MyMovie video {
+                margin-bottom: 10px;
+            }
+        
             /* GRID untuk proyek */
             .project-grid {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
                 gap: 20px;
+                width: 100%;
             }
-
+        
             .project-grid img {
                 width: 100%;
                 height: auto;
                 border-radius: 8px;
             }
-
+        
             /* Warna teks untuk proyek */
             .orange p {
                 color: rgb(238, 169, 41);
             }
-
+        
             .brown p {
                 color: brown;
             }
-
+        
             .light-blue p {
                 color: #00bfff;
             }
-
+        
             .dark-blue p {
                 color: #00008b;
             }
-
+        
             /* RESPONSIVE */
             @media (max-width: 768px) {
                 .card {
                     flex: 1 1 100%;
                 }
-
+        
                 .project-grid {
                     grid-template-columns: 1fr;
                 }
+        
+                nav section {
+                    flex-direction: column;
+                    align-items: center;
+                }
+        
+                nav section li {
+                    margin: 10px 0;
+                }
             }
         </style>
-    </body>
-</html>
+        
