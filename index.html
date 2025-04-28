@@ -87,6 +87,22 @@
                     <p>Lagu kebangsaan Negara saya, Indonesia Raya.</p>
                 </article>
 
+                <article id="BukuTamu" class="card">
+                    <h2>Buku Tamu</h2>
+                
+                    <label for="guestName">Masukkan Nama:</label>
+                    <input type="text" id="guestName" placeholder="Nama Anda">
+                
+                    <div style="margin-top: 10px;">
+                        <button onclick="tambahNama()">Tambah</button>
+                    </div>
+                
+                    <ul id="listTamu" style="margin-top: 20px;">
+                        <!-- Daftar nama akan muncul di sini -->
+                    </ul>
+                </article>
+                
+
                 <article id="Formulir" class="card">
                     <h2>My form</h2>
                     <label for="name">Enter your name: </label>
@@ -104,6 +120,49 @@
             <p>&copy; Adinda Vany Astari - Semua Hak Dilindungi</p>
             <a href="https://www.instagram.com/dndvnast?igsh=MTNyemhwMTB5ZmNsaA=="> Instagram </a> 
         </footer>
+
+        <script>
+            function tambahNama() {
+                const input = document.getElementById("guestName");
+                const nama = input.value.trim();
+            
+                if (nama !== "") {
+                    const listItem = document.createElement("li");
+                    
+                    // Buat span untuk nama
+                    const namaSpan = document.createElement("span");
+                    namaSpan.textContent = nama;
+            
+                    // Buat tombol hapus
+                    const hapusBtn = document.createElement("button");
+                    hapusBtn.textContent = "Hapus";
+                    hapusBtn.style.marginLeft = "10px";
+                    hapusBtn.onclick = function() {
+                        listItem.remove();
+                    };
+            
+                    // Buat tombol tandai selesai
+                    const selesaiBtn = document.createElement("button");
+                    selesaiBtn.textContent = "Selesai";
+                    selesaiBtn.style.marginLeft = "5px";
+                    selesaiBtn.onclick = function() {
+                        namaSpan.style.textDecoration = "line-through";
+                        namaSpan.style.color = "grey";
+                    };
+            
+                    listItem.appendChild(namaSpan);
+                    listItem.appendChild(hapusBtn);
+                    listItem.appendChild(selesaiBtn);
+            
+                    document.getElementById("listTamu").appendChild(listItem);
+            
+                    input.value = "";
+                } else {
+                    alert("Nama tidak boleh kosong!");
+                }
+            }
+            </script>
+            
 
         <style>
             html, body {
@@ -273,5 +332,56 @@
                 }
             }
 
+                /* Styling semua tombol biasa */
+                button {
+                    padding: 8px 12px;
+                    margin: 5px 2px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-weight: bold;
+                    transition: background-color 0.3s, transform 0.2s;
+                }
+
+                /*tombol Tambah */
+                #BukuTamu button {
+                    background-color: #4CAF50; /* hijau */
+                    color: white;
+                }
+
+                #BukuTamu button:hover {
+                    background-color: #45a049;
+                    transform: scale(1.05);
+                }
+
+                /* Styling tombol Hapus dan Selesai di daftar tamu */
+                #listTamu button {
+                    font-size: 12px;
+                    padding: 5px 10px;
+                }
+
+                /* Tombol Hapus */
+                #listTamu button:nth-child(2) {
+                    background-color: #e74c3c; /* merah */
+                    color: white;
+                }
+
+                #listTamu button:nth-child(2):hover {
+                    background-color: #c0392b;
+                    transform: scale(1.05);
+                }
+
+                /* Tombol Selesai */
+                #listTamu button:nth-child(3) {
+                    background-color: #95a5a6; /* abu-abu */
+                    color: white;
+                }
+
+                #listTamu button:nth-child(3):hover {
+                    background-color: #7f8c8d;
+                    transform: scale(1.05);
+                }
+
         </style>
+        
         
