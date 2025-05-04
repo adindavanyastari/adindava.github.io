@@ -10,10 +10,12 @@
                 <section>
                     <li><a href="#Portofolio">Portofolio</a></li>
                     <li><a href="#Namaku">Namaku</a></li>
+                    <li><a href="#Hobykuu">Hoby kuu</a></li>
                     <li><a href="#TentangSaya">Tentang Saya</a></li>
                     <li><a href="#Organisasi">Organisasi</a></li>
-                    <li><a href="#Proyek">Proyek</a></li>
-                    <li><a href="#Hobykuu">Hoby kuu</a></li>
+                    <li><a href="#My Movie">My Movie</a></li>
+                    <li><a href="#Play List">Play List</a></li>
+                    <li><a href="#Projek">Projek</a></li>
                 </section>
             </nav>
 
@@ -31,6 +33,12 @@
                     <figcaption>Saya Adinda Vany Astari, mahasiswi Program Studi Sistem Informasi di Universitas Internasional Semen Indonesia (UISI). Saat ini saya sedang menempuh pendidikan dengan harapan dapat terus belajar dan berkembang, khususnya dalam bidang teknologi informasi yang semakin berkembang pesat. Saya memiliki ketertarikan pada dunia sistem informasi karena menurut saya, teknologi dapat memberikan banyak solusi dan kemudahan dalam kehidupan sehari-hari.</figcaption>
                 </article>
 
+                <article id="Hobykuu" class="card">
+                    <h2>Hoby kuu</h2>
+                    <img src="gambar4.png" class="featured-image" alt="Hoby kuu">
+                    <p>Bagi saya, jalan-jalan di alam adalah momen terbaik untuk bersyukur. Saat kaki melangkah di jalan setapak yang dikelilingi pepohonan rindang, saya merasakan begitu banyak nikmat yang sering tak disadari. Suara gemericik air sungai, kicauan burung, dan semilir angin yang menyapu wajah membuat saya sadar bahwa Tuhan telah menciptakan dunia ini dengan begitu indah. Di tengah hiruk-pikuk kehidupan, hobi ini mengajarkan saya untuk melambat sejenak, melihat sekitar, dan mensyukuri setiap detik yang diberikan Tuhan.</p>
+                </article>
+
                 <article id="TentangSaya" class="card">
                     <h2>Tentang Saya</h2>
                     <img src="gambar3.png" class="featured-image" alt="Tentang Saya">
@@ -43,8 +51,56 @@
                     <figcaption>Gambar berisi Organisasi penulis.</figcaption>
                 </article>
 
-                <article id="Proyek" class="card">
-                    <h2>Proyek</h2>
+                <article id="My Movie" class="card">
+                    <h2>My Movie</h2>
+                    <video controls>
+                        <source src="video.mp4" type="video/mp4">
+                    </video> 
+                    <p>Di tengah udara sejuk dan pemandangan gunung yang memanjakan mata, saya menikmati waktu dengan cara yang sederhana. Duduk bersama, berbagi cerita ringan, sambil mencicipi jajanan favorit yang kami bawa dari rumah. Tidak ada hal yang mewah, hanya obrolan hangat, tawa kecil, dan suasana yang membuat hati terasa lebih dekat dengan alam dan satu sama lain. Momen seperti ini membuat saya sadar bahwa kebahagiaan seringkali hadir dalam kesederhanaan yang tulus.</p>
+                </article>
+
+                <article id="Play List" class="card">
+                    <h2>Play List</h2>
+                    <audio controls>
+                        <source src="Fourtwnty - Mangu ft. Charita Utami ( Official Audio ).mp3" type="audio/mp3">
+                    </audio>
+                    <p>Makna lagu "Mangu" oleh Fourtwnty feat. Charita Utami secara umum adalah tentang sebuah hubungan yang terhalang oleh perbedaan keyakinan atau agama.</p>
+                    <audio controls>
+                        <source src="Feast.mp3" type="audio/mp3">
+                    </audio>
+                    <p>Lagu "Nina" karya .Feast menceritakan tentang kasih sayang seorang ayah kepada anak perempuannya.</p>
+                    <audio controls>
+                        <source src="Indonesia Raya - Instrumental Lagu Nasional Indonesia.mp3" type="audio/mp3">
+                    </audio>
+                    <p>Lagu Indonesia Raya memiliki makna yang sangat dalam, mencakup semangat persatuan, cinta tanah air, dan cita-cita bangsa Indonesia untuk merdeka dan berdaulat..</p>
+                </article>
+
+                <article id="Formulir" class="card">
+                    <h2>My form</h2>
+                    <label for="name">Enter your name: </label>
+                    <input type="text" name="name" id="name" required />
+                    <div class="form-example">
+                        <label for="email">Enter your email: </label>
+                        <input type="email" name="email" id="email" required />
+                    </div>
+                    <button type="submit">Kirim</button>
+                </article>
+
+                <article id="BukuTamu" class="card">
+                    <h2>Buku Tamu</h2>
+                    <label for="guestName">Masukkan Nama:</label>
+                    <input type="text" id="guestName" placeholder="Nama Anda">
+                    <div style="margin-top: 10px;">
+                        <button onclick="tambahNama()">Tambah</button>
+                    </div>
+                
+                    <ul id="listTamu" style="margin-top: 20px;">
+                        <!-- Daftar nama akan muncul di sini -->
+                    </ul>
+                </article>
+
+                <article id="Projek" class="card">
+                    <h2>Projek</h2>
                     <div class="project-grid">
                         <div class="orange">
                             <img src="gambar6.png" class="featured-image" alt="Proyek">
@@ -62,108 +118,132 @@
                             <img src="gambar9.png" class="featured-image" alt="Proyek">
                             <p class="dark-blue">Edukasi Sampah: Mengajak masyarakat untuk peduli lingkungan melalui pengelolaan sampah yang baik dan benar.</p>
                         </div>
+                        <div class="blue">
+                            <img src="gambar11.png" class="featured-image" alt="Proyek">
+                            <p class="dark-blue">Poster Tata Kelola Teknologi Informasi.</p>
+                        </div>
+                        <div class="grey">
+                            <img src="gambar12.png" class="featured-image" alt="Proyek">
+                            <p class="dark-blue">Sertifikat: Pembuatan sertifikat pada beberapa acara kepanitiaan.</p>
+                        </div>
+                        <div class="green">
+                            <img src="gambar13.png" class="featured-image" alt="Proyek">
+                            <p class="dark-blue">Pamflet kegiatan adalah informasi tentang sebuah acara atau kegiatan tertentu.</p>
+                        </div>
+                        <div class="red">
+                            <img src="gambar14.png" class="featured-image" alt="Proyek">
+                            <p class="dark-blue">Thumbnail, Podcast "POSISI", ngobrol santai bersama sistem informasi.</p>
+                        </div>
                     </div>
                 </article>
 
-                <article id="Hobykuu" class="card">
-                    <h2>Hoby kuu</h2>
-                    <img src="gambar4.png" class="featured-image" alt="Hoby kuu">
-                    <p>Bagi saya, jalan-jalan di alam adalah momen terbaik untuk bersyukur. Saat kaki melangkah di jalan setapak yang dikelilingi pepohonan rindang, saya merasakan udara segar yang memenuhi paru-paru, begitu banyak nikmat yang sering tak disadari. Suara gemericik air sungai, kicauan burung, dan semilir angin yang menyapu wajah membuat saya sadar bahwa Tuhan telah menciptakan dunia ini dengan begitu indah. Setiap daun yang berguguran, awan yang bergerak pelan di langit, hingga aroma tanah setelah hujan, semuanya terasa begitu bermakna. Di tengah hiruk-pikuk kehidupan, hobi ini mengajarkan saya untuk melambat sejenak, melihat sekitar, dan mensyukuri setiap detik yang diberikan Tuhan.</p>
+                <article id="GambarAPI" class="card">
+                    <h2>API, Application Programming Interface (Pexels)</h2>
+                    <div id="hasilAPI" style="display: flex; flex-wrap: wrap;"></div>
+                    <div id="hasilVideoAPI"></div>
                 </article>
 
-                <article id="MyMovie" class="card">
-                    <h2>My Movie</h2>
-                    <video controls>
-                        <source src="video.mp4" type="video/mp4">
-                    </video> 
-                    <p>Di tengah udara sejuk dan pemandangan gunung yang memanjakan mata, saya menikmati waktu dengan cara yang sederhana. Duduk bersama, berbagi cerita ringan, sambil mencicipi jajanan favorit yang kami bawa dari rumah. Tidak ada hal yang mewah, hanya obrolan hangat, tawa kecil, dan suasana yang membuat hati terasa lebih dekat dengan alam dan satu sama lain. Momen seperti ini membuat saya sadar bahwa kebahagiaan seringkali hadir dalam kesederhanaan yang tulus.</p>
-                </article>
-
-                <article id="MySong" class="card">
-                    <h2>My Song</h2>
-                    <audio controls>
-                        <source src="Indonesia Raya - Instrumental Lagu Nasional Indonesia.mp3" type="audio/mp3">
-                    </audio>
-                    <p>Lagu kebangsaan Negara saya, Indonesia Raya.</p>
-                </article>
-
-                <article id="BukuTamu" class="card">
-                    <h2>Buku Tamu</h2>
-                
-                    <label for="guestName">Masukkan Nama:</label>
-                    <input type="text" id="guestName" placeholder="Nama Anda">
-                
-                    <div style="margin-top: 10px;">
-                        <button onclick="tambahNama()">Tambah</button>
-                    </div>
-                
-                    <ul id="listTamu" style="margin-top: 20px;">
-                        <!-- Daftar nama akan muncul di sini -->
-                    </ul>
-                </article>
-                
-
-                <article id="Formulir" class="card">
-                    <h2>My form</h2>
-                    <label for="name">Enter your name: </label>
-                    <input type="text" name="name" id="name" required />
-                    <div class="form-example">
-                        <label for="email">Enter your email: </label>
-                        <input type="email" name="email" id="email" required />
-                    </div>
-                    <button type="submit">Kirim</button>
-                </article>
             </div>
         </main>
 
         <footer>
-            <p>&copy; Adinda Vany Astari - Semua Hak Dilindungi</p>
+            <p>&copy; Portofolio Oleh - Adinda Vany Astari</p>
+            <p>No Handphone : +6282 4576 20059.</p>
+            <p>Email : adinda.astari23@student.uisi.ac.id.</p>
             <a href="https://www.instagram.com/dndvnast?igsh=MTNyemhwMTB5ZmNsaA=="> Instagram </a> 
         </footer>
 
         <script>
+            const API_KEY = "qwaq1nevL5Rq7l0LEUiQyKF9ax5Ngy0W05jrzYrgniPO6BZmjEZhv28j";
+        
+            async function ambilGambarDariPexels(query = "cat") {
+                try {
+                    const response = await fetch(`https://api.pexels.com/v1/search?query=${query}&per_page=2`, {
+                        headers: { Authorization: API_KEY }
+                    });
+        
+                    const data = await response.json();
+                    const container = document.getElementById("hasilAPI");
+                    container.innerHTML = "";
+        
+                    data.photos.forEach(photo => {
+                        const img = document.createElement("img");
+                        img.src = photo.src.medium;
+                        img.alt = photo.photographer;
+                        img.style.margin = "10px";
+                        img.style.width = "260px";
+                        img.style.borderRadius = "10px";
+                        container.appendChild(img);
+                    });
+                } catch (error) {
+                    console.error("Gagal mengambil gambar:", error);
+                }
+            }
+        
+            async function ambilVideoDariPexels(query = "cat") {
+                try {
+                    const response = await fetch(`https://api.pexels.com/videos/search?query=${query}&per_page=2`, {
+                        headers: { Authorization: API_KEY }
+                    });
+        
+                    const data = await response.json();
+                    const videoContainer = document.getElementById("hasilVideoAPI");
+                    videoContainer.innerHTML = "";
+        
+                    data.videos.forEach(video => {
+                        const videoEl = document.createElement("video");
+                        videoEl.controls = true;
+                        videoEl.width = 320;
+                        videoEl.style.margin = "10px";
+                        videoEl.src = video.video_files[0].link;
+                        videoContainer.appendChild(videoEl);
+                    });
+                } catch (error) {
+                    console.error("Gagal mengambil video:", error);
+                }
+            }
+        
             function tambahNama() {
                 const input = document.getElementById("guestName");
                 const nama = input.value.trim();
-            
+        
                 if (nama !== "") {
                     const listItem = document.createElement("li");
-                    
-                    // Buat span untuk nama
                     const namaSpan = document.createElement("span");
                     namaSpan.textContent = nama;
-            
-                    // Buat tombol hapus
+        
                     const hapusBtn = document.createElement("button");
                     hapusBtn.textContent = "Hapus";
                     hapusBtn.style.marginLeft = "10px";
-                    hapusBtn.onclick = function() {
+                    hapusBtn.onclick = function () {
                         listItem.remove();
                     };
-            
-                    // Buat tombol tandai selesai
+        
                     const selesaiBtn = document.createElement("button");
                     selesaiBtn.textContent = "Selesai";
                     selesaiBtn.style.marginLeft = "5px";
-                    selesaiBtn.onclick = function() {
+                    selesaiBtn.onclick = function () {
                         namaSpan.style.textDecoration = "line-through";
                         namaSpan.style.color = "grey";
                     };
-            
+        
                     listItem.appendChild(namaSpan);
                     listItem.appendChild(hapusBtn);
                     listItem.appendChild(selesaiBtn);
-            
+        
                     document.getElementById("listTamu").appendChild(listItem);
-            
                     input.value = "";
                 } else {
                     alert("Nama tidak boleh kosong!");
                 }
             }
-            </script>
-            
-
+        
+            document.addEventListener("DOMContentLoaded", function () {
+                ambilGambarDariPexels("kucing");
+                ambilVideoDariPexels("cat");
+            });
+        </script>
+    
         <style>
             html, body {
                 scroll-behavior: smooth;
@@ -175,7 +255,7 @@
             }
         
             header {
-                background-color: #8e989b;
+                background-color: #596e74;
                 color: white;
                 padding: 20px 0;
                 text-align: center;
@@ -216,7 +296,7 @@
             footer {
                 text-align: center;
                 padding: 15px;
-                background-color: #b7c5b7;
+                background-color: #608697;
                 color: white;
                 position: relative;
                 bottom: 0;
@@ -286,7 +366,7 @@
             .project-grid {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-                gap: 20px;
+                gap: 60px;
                 width: 100%;
             }
                     
@@ -311,6 +391,22 @@
         
             .dark-blue p {
                 color: #00008b;
+            }
+
+            .blue p {
+                color: #181845;
+            }
+
+            .grey p {
+                color: #504012;
+            }
+
+            .green p {
+                color: #094420;
+            }
+
+            .red p {
+                color: #551515;
             }
         
             @media (max-width: 768px) {
@@ -380,6 +476,22 @@
                 #listTamu button:nth-child(3):hover {
                     background-color: #7f8c8d;
                     transform: scale(1.05);
+                }
+
+                /*Gambar API responsif*/
+                #hasilAPI img {
+                    width: 100%;
+                    height: auto;
+                    max-width: 100%;
+                    border-radius: 30px;
+                    margin: 0 0 10px 0;
+                    object-fit: cover;
+                }
+
+                /* Agar kontainer API dan video rapih di mobile */
+                #hasilAPI,
+                #hasilVideoAPI {
+                    width: 100%;
                 }
 
         </style>
